@@ -56,11 +56,16 @@ class FirstViewController: UIViewController {
     var meeting:Meeting!
     var currentTime:NSString!
     var currentCost:Float!
+    var numberFormatter = NSNumberFormatter()
+    
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
         
-        print("State")
+        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        numberFormatter.minimumFractionDigits = 2
+        numberFormatter.maximumFractionDigits = 2
         
         state = MeetingState(people: Int(peopleSlider.value), hourly: Int(hourlySlider.value))
 
@@ -69,8 +74,10 @@ class FirstViewController: UIViewController {
         peopleSlider.addTarget(self, action: Selector("peopleSliderDone"), forControlEvents: UIControlEvents.TouchUpInside)
 
         hourlySlider.addTarget(self, action: Selector("hourlySliderDone"), forControlEvents: UIControlEvents.TouchUpInside)
-        print("View did load")
+        print("viewDidLoad() done")
+
         
+
     }
     
     func peopleSliderDone(){
@@ -190,7 +197,11 @@ class FirstViewController: UIViewController {
         if state.peopleCount > 0{
             self.state.peopleCount = state.peopleCount - 1
             self.peopleSlider.value = peopleSlider.value - 1
-            self.peopleLabel.text = "\(Int(peopleSlider.value)) people"
+            if Int(peopleSlider.value) == 1{
+                self.peopleLabel.text = "\(Int(peopleSlider.value)) people"
+            }else{
+                self.peopleLabel.text = "\(Int(peopleSlider.value)) person"
+            }
         }
     }
     
@@ -198,7 +209,12 @@ class FirstViewController: UIViewController {
         if state.peopleCount < Int(peopleSlider.maximumValue) {
             self.state.peopleCount = state.peopleCount + 1
             self.peopleSlider.value = peopleSlider.value + 1
-            self.peopleLabel.text = "\(Int(peopleSlider.value)) people"
+            if Int(peopleSlider.value) == 1{
+                self.peopleLabel.text = "\(Int(peopleSlider.value)) person"
+            }else{
+                self.peopleLabel.text = "\(Int(peopleSlider.value)) people"
+                
+            }
         }
     }
     
@@ -227,7 +243,8 @@ class FirstViewController: UIViewController {
             meeting.timeInSeconds = diff
             
             currentCost = calcCostPerHour(diff.costTime, people: Int(state.peopleCount), hourly: Int(state.hourlyRate))
-            costLabel.text = String(format: "$%0.2f", currentCost)
+//            Double(round(100*currentCost)/100)
+            costLabel.text =  "$\(numberFormatter.stringFromNumber(currentCost)!)"
         }
         else if isPaused {
             pausedTimeInterval += CLOCK_INTERVAL

@@ -51,7 +51,7 @@ class IOAdapter{
         }else{
             print("Error: anyObj is not NSArray")
         }
-        print("IOAdapter::fetchingArray= \(arrayOfMeetings.count)")
+        print("Fetched array size: \(arrayOfMeetings.count)")
         return arrayOfMeetings
     }
     

@@ -40,7 +40,7 @@
                                 <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="zac-wo-g6e">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="zac-wo-g6e">
                                 <rect key="frame" x="176" y="215" width="248" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="Xnq-hE-lmU"/>
@@ -61,7 +61,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="1mY-Ff-uzA">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="1mY-Ff-uzA">
                                 <rect key="frame" x="176" y="291" width="248" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="Qjb-FA-PDX"/>
