@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE2404A41B27D85A0077FCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2404A31B27D85A0077FCEC /* AppDelegate.swift */; };
+		FE2404A61B27D85A0077FCEC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2404A51B27D85A0077FCEC /* FirstViewController.swift */; };
+		FE2404A81B27D85A0077FCEC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2404A71B27D85A0077FCEC /* SecondViewController.swift */; };
+		FE2404AB1B27D85A0077FCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2404A91B27D85A0077FCEC /* Main.storyboard */; };
+		FE2404AD1B27D85A0077FCEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2404AC1B27D85A0077FCEC /* Images.xcassets */; };
+		FE2404B01B27D85A0077FCEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2404AE1B27D85A0077FCEC /* LaunchScreen.xib */; };
+		FE2404BC1B27D85A0077FCEC /* FThisMeetingGammaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2404BB1B27D85A0077FCEC /* FThisMeetingGammaTests.swift */; };
+		FE3188A11CBD03D10010A18F /* meetingful_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3188A01CBD03D10010A18F /* meetingful_logo.png */; };
+		FE31BF4F1B2A45A3007FABF7 /* MeetingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE31BF4E1B2A45A3007FABF7 /* MeetingState.swift */; };
+		FE31BF511B2A4A99007FABF7 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE31BF501B2A4A99007FABF7 /* BaseTabBarController.swift */; };
+		FE31BF531B2A4C36007FABF7 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE31BF521B2A4C36007FABF7 /* Serializable.swift */; };
+		FE31BF551B2A6A7E007FABF7 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE31BF541B2A6A7E007FABF7 /* Meeting.swift */; };
+		FE57753B1B35A86D0010441C /* SettingsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE57753A1B35A86D0010441C /* SettingsTableCell.swift */; };
+		FE8533081B2B753700C7F33C /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8533071B2B753700C7F33C /* MoreTableViewController.swift */; };
+		FE8F51BE1B2E27960063CB6C /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F51BD1B2E27960063CB6C /* StatsTableViewCell.swift */; };
+		FE8F51C01B2E58A70063CB6C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F51BF1B2E58A70063CB6C /* Device.swift */; };
+		FE8F51C21B2E5E130063CB6C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F51C11B2E5E130063CB6C /* PostService.swift */; };
+		FE8F51C41B2E5E4D0063CB6C /* PostServiceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F51C31B2E5E4D0063CB6C /* PostServiceSettings.swift */; };
+		FEBD3DBF1B2B7C9D005ECE79 /* MeetingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD3DBE1B2B7C9D005ECE79 /* MeetingTableViewCell.swift */; };
+		FEFACA7E1B2B558E00380911 /* IOAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFACA7D1B2B558E00380911 /* IOAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE2404B61B27D85A0077FCEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE2404961B27D85A0077FCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE24049D1B27D85A0077FCEC;
+			remoteInfo = FThisMeetingGamma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE24049E1B27D85A0077FCEC /* FThisMeetingGamma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FThisMeetingGamma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2404A21B27D85A0077FCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2404A31B27D85A0077FCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE2404A51B27D85A0077FCEC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		FE2404A71B27D85A0077FCEC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FE2404AA1B27D85A0077FCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE2404AC1B27D85A0077FCEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE2404AF1B27D85A0077FCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FE2404B51B27D85A0077FCEC /* FThisMeetingGammaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FThisMeetingGammaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2404BA1B27D85A0077FCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2404BB1B27D85A0077FCEC /* FThisMeetingGammaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FThisMeetingGammaTests.swift; sourceTree = "<group>"; };
+		FE3188A01CBD03D10010A18F /* meetingful_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetingful_logo.png; sourceTree = "<group>"; };
+		FE31BF4E1B2A45A3007FABF7 /* MeetingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingState.swift; sourceTree = "<group>"; };
+		FE31BF501B2A4A99007FABF7 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		FE31BF521B2A4C36007FABF7 /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
+		FE31BF541B2A6A7E007FABF7 /* Meeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		FE57753A1B35A86D0010441C /* SettingsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableCell.swift; sourceTree = "<group>"; };
+		FE8533071B2B753700C7F33C /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		FE8F51BD1B2E27960063CB6C /* StatsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		FE8F51BF1B2E58A70063CB6C /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		FE8F51C11B2E5E130063CB6C /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		FE8F51C31B2E5E4D0063CB6C /* PostServiceSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostServiceSettings.swift; sourceTree = "<group>"; };
+		FEBD3DBE1B2B7C9D005ECE79 /* MeetingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingTableViewCell.swift; sourceTree = "<group>"; };
+		FEFACA7D1B2B558E00380911 /* IOAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOAdapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE24049B1B27D85A0077FCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2404B21B27D85A0077FCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE2404951B27D85A0077FCEC = {
+			isa = PBXGroup;
+			children = (
+				FE2404A01B27D85A0077FCEC /* FThisMeetingGamma */,
+				FE2404B81B27D85A0077FCEC /* FThisMeetingGammaTests */,
+				FE24049F1B27D85A0077FCEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE24049F1B27D85A0077FCEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE24049E1B27D85A0077FCEC /* FThisMeetingGamma.app */,
+				FE2404B51B27D85A0077FCEC /* FThisMeetingGammaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE2404A01B27D85A0077FCEC /* FThisMeetingGamma */ = {
+			isa = PBXGroup;
+			children = (
+				FE2404A31B27D85A0077FCEC /* AppDelegate.swift */,
+				FE2404A51B27D85A0077FCEC /* FirstViewController.swift */,
+				FE2404A71B27D85A0077FCEC /* SecondViewController.swift */,
+				FE2404A91B27D85A0077FCEC /* Main.storyboard */,
+				FE2404AC1B27D85A0077FCEC /* Images.xcassets */,
+				FE3188A01CBD03D10010A18F /* meetingful_logo.png */,
+				FE2404AE1B27D85A0077FCEC /* LaunchScreen.xib */,
+				FE2404A11B27D85A0077FCEC /* Supporting Files */,
+				FE31BF4E1B2A45A3007FABF7 /* MeetingState.swift */,
+				FE31BF501B2A4A99007FABF7 /* BaseTabBarController.swift */,
+				FE31BF521B2A4C36007FABF7 /* Serializable.swift */,
+				FE31BF541B2A6A7E007FABF7 /* Meeting.swift */,
+				FEFACA7D1B2B558E00380911 /* IOAdapter.swift */,
+				FE8533071B2B753700C7F33C /* MoreTableViewController.swift */,
+				FEBD3DBE1B2B7C9D005ECE79 /* MeetingTableViewCell.swift */,
+				FE8F51BD1B2E27960063CB6C /* StatsTableViewCell.swift */,
+				FE8F51BF1B2E58A70063CB6C /* Device.swift */,
+				FE8F51C11B2E5E130063CB6C /* PostService.swift */,
+				FE8F51C31B2E5E4D0063CB6C /* PostServiceSettings.swift */,
+				FE57753A1B35A86D0010441C /* SettingsTableCell.swift */,
+			);
+			path = FThisMeetingGamma;
+			sourceTree = "<group>";
+		};
+		FE2404A11B27D85A0077FCEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE2404A21B27D85A0077FCEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE2404B81B27D85A0077FCEC /* FThisMeetingGammaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE2404BB1B27D85A0077FCEC /* FThisMeetingGammaTests.swift */,
+				FE2404B91B27D85A0077FCEC /* Supporting Files */,
+			);
+			path = FThisMeetingGammaTests;
+			sourceTree = "<group>";
+		};
+		FE2404B91B27D85A0077FCEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE2404BA1B27D85A0077FCEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE24049D1B27D85A0077FCEC /* FThisMeetingGamma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2404BF1B27D85A0077FCEC /* Build configuration list for PBXNativeTarget "FThisMeetingGamma" */;
+			buildPhases = (
+				FE24049A1B27D85A0077FCEC /* Sources */,
+				FE24049B1B27D85A0077FCEC /* Frameworks */,
+				FE24049C1B27D85A0077FCEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FThisMeetingGamma;
+			productName = FThisMeetingGamma;
+			productReference = FE24049E1B27D85A0077FCEC /* FThisMeetingGamma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE2404B41B27D85A0077FCEC /* FThisMeetingGammaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2404C21B27D85A0077FCEC /* Build configuration list for PBXNativeTarget "FThisMeetingGammaTests" */;
+			buildPhases = (
+				FE2404B11B27D85A0077FCEC /* Sources */,
+				FE2404B21B27D85A0077FCEC /* Frameworks */,
+				FE2404B31B27D85A0077FCEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE2404B71B27D85A0077FCEC /* PBXTargetDependency */,
+			);
+			name = FThisMeetingGammaTests;
+			productName = FThisMeetingGammaTests;
+			productReference = FE2404B51B27D85A0077FCEC /* FThisMeetingGammaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE2404961B27D85A0077FCEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Andrew Wetherington";
+				TargetAttributes = {
+					FE24049D1B27D85A0077FCEC = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = SR4698DKCZ;
+					};
+					FE2404B41B27D85A0077FCEC = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = FE24049D1B27D85A0077FCEC;
+					};
+				};
+			};
+			buildConfigurationList = FE2404991B27D85A0077FCEC /* Build configuration list for PBXProject "FThisMeetingGamma" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE2404951B27D85A0077FCEC;
+			productRefGroup = FE24049F1B27D85A0077FCEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE24049D1B27D85A0077FCEC /* FThisMeetingGamma */,
+				FE2404B41B27D85A0077FCEC /* FThisMeetingGammaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE24049C1B27D85A0077FCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2404AB1B27D85A0077FCEC /* Main.storyboard in Resources */,
+				FE2404B01B27D85A0077FCEC /* LaunchScreen.xib in Resources */,
+				FE3188A11CBD03D10010A18F /* meetingful_logo.png in Resources */,
+				FE2404AD1B27D85A0077FCEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2404B31B27D85A0077FCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE24049A1B27D85A0077FCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8F51C41B2E5E4D0063CB6C /* PostServiceSettings.swift in Sources */,
+				FE31BF551B2A6A7E007FABF7 /* Meeting.swift in Sources */,
+				FE8533081B2B753700C7F33C /* MoreTableViewController.swift in Sources */,
+				FE31BF531B2A4C36007FABF7 /* Serializable.swift in Sources */,
+				FE8F51C01B2E58A70063CB6C /* Device.swift in Sources */,
+				FEBD3DBF1B2B7C9D005ECE79 /* MeetingTableViewCell.swift in Sources */,
+				FE2404A81B27D85A0077FCEC /* SecondViewController.swift in Sources */,
+				FEFACA7E1B2B558E00380911 /* IOAdapter.swift in Sources */,
+				FE2404A41B27D85A0077FCEC /* AppDelegate.swift in Sources */,
+				FE8F51BE1B2E27960063CB6C /* StatsTableViewCell.swift in Sources */,
+				FE31BF511B2A4A99007FABF7 /* BaseTabBarController.swift in Sources */,
+				FE8F51C21B2E5E130063CB6C /* PostService.swift in Sources */,
+				FE57753B1B35A86D0010441C /* SettingsTableCell.swift in Sources */,
+				FE2404A61B27D85A0077FCEC /* FirstViewController.swift in Sources */,
+				FE31BF4F1B2A45A3007FABF7 /* MeetingState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2404B11B27D85A0077FCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2404BC1B27D85A0077FCEC /* FThisMeetingGammaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE2404B71B27D85A0077FCEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE24049D1B27D85A0077FCEC /* FThisMeetingGamma */;
+			targetProxy = FE2404B61B27D85A0077FCEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE2404A91B27D85A0077FCEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE2404AA1B27D85A0077FCEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE2404AE1B27D85A0077FCEC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE2404AF1B27D85A0077FCEC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE2404BD1B27D85A0077FCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE2404BE1B27D85A0077FCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FE2404C01B27D85A0077FCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = FThisMeetingGamma/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FE2404C11B27D85A0077FCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = FThisMeetingGamma/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		FE2404C31B27D85A0077FCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FThisMeetingGammaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FThisMeetingGamma.app/FThisMeetingGamma";
+			};
+			name = Debug;
+		};
+		FE2404C41B27D85A0077FCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FThisMeetingGammaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FThisMeetingGamma.app/FThisMeetingGamma";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE2404991B27D85A0077FCEC /* Build configuration list for PBXProject "FThisMeetingGamma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2404BD1B27D85A0077FCEC /* Debug */,
+				FE2404BE1B27D85A0077FCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE2404BF1B27D85A0077FCEC /* Build configuration list for PBXNativeTarget "FThisMeetingGamma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2404C01B27D85A0077FCEC /* Debug */,
+				FE2404C11B27D85A0077FCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE2404C21B27D85A0077FCEC /* Build configuration list for PBXNativeTarget "FThisMeetingGammaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2404C31B27D85A0077FCEC /* Debug */,
+				FE2404C41B27D85A0077FCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE2404961B27D85A0077FCEC /* Project object */;
+}
