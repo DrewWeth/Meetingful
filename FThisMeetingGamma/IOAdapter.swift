@@ -42,8 +42,15 @@ class IOAdapter{
                     b.cost = cost!.floatValue ?? 0.0
                     let tis = json["TimeInSeconds"] as? NSString
                     b.timeInSeconds = tis!.doubleValue
+                    if let startTime = json["StartTime"] as? NSString{
+                        b.startDate = NSDate(timeIntervalSince1970: startTime.doubleValue)
+                    }else{
+                        b.startDate = NSDate(timeIntervalSince1970: 0.0)
+                    }
+                
+                    
+                    
                     arrayOfMeetings.append(b)
-                    print("b.cost: \(b.cost)")
                 }else{
                     print("Cannot convert to dictionary")
                 }
@@ -67,17 +74,15 @@ class IOAdapter{
 //        jsonString = jsonString + "]"
         
         
-        print("About to make array stuff")
         
         var arr:NSMutableArray = []
         for meeting in arrayOfObjects{
-            
             let dict:NSDictionary = [ "Name": "Default",
                                             "Worth":  "\(meeting.worth)",
                                             "Cost": "\(meeting.cost)",
-                                            "TimeInSeconds": "\(meeting.timeInSeconds)"
+                                            "TimeInSeconds": "\(meeting.timeInSeconds)",
+                                            "StartTime": "\(meeting.startDate.timeIntervalSince1970)"
             ]
-            print(dict)
             arr.addObject(dict)
         }
         

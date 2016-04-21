@@ -22,7 +22,8 @@ extension NSTimeInterval {
 
 
 class FirstViewController: UIViewController {
-
+    @IBOutlet var ScrollView:UIScrollView!
+    
     @IBOutlet weak var lessPeople: UIButton!
 
     @IBOutlet weak var morePeople: UIButton!
@@ -63,11 +64,32 @@ class FirstViewController: UIViewController {
 
         super.viewDidLoad()
         
+//        let contentRect = CGRectZero;
+        let last = ScrollView.subviews.last
+        let wd = last!.frame.origin.y
+        let wh = last!.frame.size.height
+        ScrollView.contentSize.height = wd+wh;
+//        
+//        var bgView = UIImageView(image: UIImage(named:"meetingful_logo_only_background.png"))
+//        bgView.contentMode = .ScaleToFill
+//        
+//        var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
+//        visualEffectView.frame = bgView.bounds
+//        
+//        bgView.addSubview(visualEffectView)
+//        bgView.sendSubviewToBack(visualEffectView)
+//        self.view.insertSubview(bgView, atIndex:0)
+//        
+//        let scrollView = self.view.viewWithTag(1776) as! UIScrollView
+//        scrollView.layer.cornerRadius = 10.0
+//        scrollView.layer.masksToBounds = true
+//        scrollView.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.8)
+        
         numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         numberFormatter.minimumFractionDigits = 2
         numberFormatter.maximumFractionDigits = 2
         
-        state = MeetingState(people: Int(peopleSlider.value), hourly: Int(hourlySlider.value))
+        state = MeetingState(people: Int(peopleSlider.value), hourly: Int(hourlySlider.value), startingTime: NSDate())
 
         resetButton.hidden = true
 
@@ -75,9 +97,12 @@ class FirstViewController: UIViewController {
 
         hourlySlider.addTarget(self, action: Selector("hourlySliderDone"), forControlEvents: UIControlEvents.TouchUpInside)
         print("viewDidLoad() done")
-
+        
+//        self.view.backgroundColor = UIColor.clearColor()
+//        
         
 
+        
     }
     
     func peopleSliderDone(){
@@ -100,15 +125,22 @@ class FirstViewController: UIViewController {
     
     @IBAction func peopleSliderChanged(sender: UISlider) {
         state.peopleCount = Int(sender.value)
-        peopleLabel.text = "\(state.peopleCount) people"
+        if state.peopleCount == 1{
+            peopleLabel.text = "\(state.peopleCount) person"
+        }else{
+            peopleLabel.text = "\(state.peopleCount) people"
+        }
     }
+    
     func calcCostPerHour(cost:Float, people:Int, hourly:Int) -> Float {
         return Float(cost * Float(people) * Float(hourly))
     }
     
     @IBAction func hourlySliderChanged(sender: UISlider) {
-        state.hourlyRate = Int(sender.value)
-        hourlyLabel.text = "$\(state.hourlyRate)/h"
+        let hourlySliderValue = Int(sender.value)
+        state.hourlyRate = hourlySliderValue
+        let salary = hourlySliderValue * 2
+        hourlyLabel.text = "$\(hourlySliderValue)/h ($\(salary)k)"
     }
     
     @IBAction func startButton(sender: AnyObject) {
@@ -119,6 +151,7 @@ class FirstViewController: UIViewController {
             startTime = NSDate.timeIntervalSinceReferenceDate()
             startButton.setTitle("Pause", forState: UIControlState.Normal)
             meeting = Meeting()
+            state.startingDate = NSDate()
         }
         else if(timer.valid){
             if !isPaused {
@@ -158,6 +191,7 @@ class FirstViewController: UIViewController {
         meeting.cost = currentCost
         meeting.name = meeting.filename
         meeting.people = state.peopleCount
+        meeting.startDate = state.startingDate
         
 //        if self.sendAlert(){
         meeting.save()
@@ -198,9 +232,9 @@ class FirstViewController: UIViewController {
             self.state.peopleCount = state.peopleCount - 1
             self.peopleSlider.value = peopleSlider.value - 1
             if Int(peopleSlider.value) == 1{
-                self.peopleLabel.text = "\(Int(peopleSlider.value)) people"
-            }else{
                 self.peopleLabel.text = "\(Int(peopleSlider.value)) person"
+            }else{
+                self.peopleLabel.text = "\(Int(peopleSlider.value)) people"
             }
         }
     }
@@ -222,7 +256,9 @@ class FirstViewController: UIViewController {
         if state.hourlyRate > 0{
             self.state.hourlyRate = state.hourlyRate - 1
             self.hourlySlider.value = hourlySlider.value - 1
-            self.hourlyLabel.text = "$\(Int(hourlySlider.value))/h"
+            let hourlySliderValue = Int(self.hourlySlider.value)
+            let salary = hourlySliderValue * 2
+            self.hourlyLabel.text = "$\(hourlySliderValue)/h ($\(salary)k)"
         }
     
     }
@@ -231,9 +267,12 @@ class FirstViewController: UIViewController {
         if state.hourlyRate < Int(hourlySlider.maximumValue) {
             self.state.hourlyRate = state.hourlyRate + 1
             self.hourlySlider.value = hourlySlider.value + 1
-            self.hourlyLabel.text = "$\(Int(hourlySlider.value))/h"
+            let hourlySliderValue = Int(self.hourlySlider.value)
+            let salary = hourlySliderValue * 2
+            self.hourlyLabel.text = "$\(hourlySliderValue)/h ($\(salary)k)"
         }
     }
+    
     
     func updateTime(){
         var diff:NSTimeInterval = (NSDate.timeIntervalSinceReferenceDate() - startTime) - pausedTimeInterval
@@ -243,7 +282,6 @@ class FirstViewController: UIViewController {
             meeting.timeInSeconds = diff
             
             currentCost = calcCostPerHour(diff.costTime, people: Int(state.peopleCount), hourly: Int(state.hourlyRate))
-//            Double(round(100*currentCost)/100)
             costLabel.text =  "$\(numberFormatter.stringFromNumber(currentCost)!)"
         }
         else if isPaused {

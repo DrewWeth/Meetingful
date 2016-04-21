@@ -26,6 +26,8 @@
 		FE8F51C21B2E5E130063CB6C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F51C11B2E5E130063CB6C /* PostService.swift */; };
 		FE8F51C41B2E5E4D0063CB6C /* PostServiceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F51C31B2E5E4D0063CB6C /* PostServiceSettings.swift */; };
 		FEBD3DBF1B2B7C9D005ECE79 /* MeetingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD3DBE1B2B7C9D005ECE79 /* MeetingTableViewCell.swift */; };
+		FEBF902A1CBEF00300CF4D46 /* meetingful_logo_no_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBF90281CBEF00300CF4D46 /* meetingful_logo_no_background.png */; };
+		FEBF902B1CBEF00300CF4D46 /* meetingful_logo_only_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FEBF90291CBEF00300CF4D46 /* meetingful_logo_only_background.png */; };
 		FEFACA7E1B2B558E00380911 /* IOAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFACA7D1B2B558E00380911 /* IOAdapter.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		FE8F51C11B2E5E130063CB6C /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		FE8F51C31B2E5E4D0063CB6C /* PostServiceSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostServiceSettings.swift; sourceTree = "<group>"; };
 		FEBD3DBE1B2B7C9D005ECE79 /* MeetingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingTableViewCell.swift; sourceTree = "<group>"; };
+		FEBF90281CBEF00300CF4D46 /* meetingful_logo_no_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetingful_logo_no_background.png; sourceTree = "<group>"; };
+		FEBF90291CBEF00300CF4D46 /* meetingful_logo_only_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetingful_logo_only_background.png; sourceTree = "<group>"; };
 		FEFACA7D1B2B558E00380911 /* IOAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,8 @@
 				FE2404A71B27D85A0077FCEC /* SecondViewController.swift */,
 				FE2404A91B27D85A0077FCEC /* Main.storyboard */,
 				FE2404AC1B27D85A0077FCEC /* Images.xcassets */,
+				FEBF90281CBEF00300CF4D46 /* meetingful_logo_no_background.png */,
+				FEBF90291CBEF00300CF4D46 /* meetingful_logo_only_background.png */,
 				FE3188A01CBD03D10010A18F /* meetingful_logo.png */,
 				FE2404AE1B27D85A0077FCEC /* LaunchScreen.xib */,
 				FE2404A11B27D85A0077FCEC /* Supporting Files */,
@@ -239,6 +245,8 @@
 				FE2404AB1B27D85A0077FCEC /* Main.storyboard in Resources */,
 				FE2404B01B27D85A0077FCEC /* LaunchScreen.xib in Resources */,
 				FE3188A11CBD03D10010A18F /* meetingful_logo.png in Resources */,
+				FEBF902A1CBEF00300CF4D46 /* meetingful_logo_no_background.png in Resources */,
+				FEBF902B1CBEF00300CF4D46 /* meetingful_logo_only_background.png in Resources */,
 				FE2404AD1B27D85A0077FCEC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,10 +345,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FThisMeetingGamma/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -352,10 +361,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FThisMeetingGamma/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

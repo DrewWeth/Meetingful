@@ -13,10 +13,12 @@ class MeetingState {
     
     public var peopleCount:Int!
     public var hourlyRate:Int!
+    public var startingDate:NSDate!
     
-    init(people:Int, hourly:Int){
+    init(people:Int, hourly:Int, startingTime:NSDate){
         peopleCount = people
         hourlyRate = hourly
+        startingDate = startingTime
     }
     
     

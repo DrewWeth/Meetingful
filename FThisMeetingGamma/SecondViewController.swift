@@ -10,8 +10,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    
+    @IBOutlet var ScrollView : UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ScrollView.contentSize.height = 1000
         // Do any additional setup after loading the view, typically from a nib.
     }
 

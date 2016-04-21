@@ -17,7 +17,8 @@ class Meeting {
     var worth:Bool!
     var people:Int!
     var timeInSeconds:NSTimeInterval!
-
+    var startDate:NSDate!
+    
     init(){
 
     }
@@ -27,7 +28,7 @@ class Meeting {
     }
     
     func initializeFiles(){
-        meetingIdentifier = randomStringWithLength(6)
+        meetingIdentifier = randomStringWithLength(12)
         
         filename = createFile(meetingIdentifier)
         logFilename = createLogfile(meetingIdentifier)
